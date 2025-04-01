@@ -3,11 +3,18 @@
     src: url(Tenkai\ DEMO.otf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
+    height: 100vh;
 }
 
 .image-container {
+    height: 100%;
     position: relative;
     flex: 1;
     overflow: hidden;
@@ -40,5 +47,5 @@ body {
 
 .go-board {
     object-fit: cover;
-    width: 250%;
+    height: 100%;
 }
