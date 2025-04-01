@@ -1,7 +1,44 @@
-p {
-    background-color: red;
+@font-face {
+    font-family: Tenkai;
+    src: url(Tenkai\ DEMO.otf);
 }
 
-img {
-    background-color: black;
+body {
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.form-container {
+    flex: 2;
+}
+
+.logo-container {
+    top: 20%;
+    position: absolute;
+    display: flex;
+    height: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-logo {
+    height: 80%;
+}
+
+.logo-text {
+    font-family: Tenkai;
+    font-size: 80px;
+    color: white;
+}
+
+.go-board {
+    object-fit: cover;
+    width: 250%;
 }
