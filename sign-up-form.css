@@ -11,6 +11,7 @@
 body {
     display: flex;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-container {
@@ -22,6 +23,17 @@ body {
 
 .form-container {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    max-width: 700px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 100px;
 }
 
 .logo-container {
@@ -48,4 +60,34 @@ body {
 .go-board {
     object-fit: cover;
     height: 100%;
+}
+
+form {
+    padding: 100px;
+}
+
+form>div {
+    display: flex;
+    justify-content: left;
+    gap: 200px;
+}
+
+column-1,
+column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+label {
+    display: block;
+}
+
+.button-container {
+    margin-left: 100px;
+}
+
+button {
+    padding: 10px;
+    width: 200px;
 }
